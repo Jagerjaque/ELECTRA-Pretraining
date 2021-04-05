@@ -1,7 +1,6 @@
 import torch
-import random
 import torch.nn as nn
-from transformers import ElectraModel, ElectraForPreTraining, ElectraForMaskedLM
+from transformers import ElectraForPreTraining, ElectraForMaskedLM
 
 from transformers import ElectraTokenizer
 tokenizer = ElectraTokenizer.from_pretrained('google/electra-base-discriminator')
