@@ -175,4 +175,4 @@ if __name__ == "__main__":
         train(model, train_iter, optimizer, generator_criterion, discriminator_criterion, device)
 
     print(f"========= saving ELECTRA Discriminator TAPT weights at {hp.logdir}=========")
-    torch.save(model.discriminator.electra.state_dict(), os.path.join(f'{hp.logdir}', 'tapt_weights.bin'))
+    torch.save(model.discriminator.electra.state_dict(), os.path.join(f'{hp.logdir}', 'pretrained_weights.bin'))
